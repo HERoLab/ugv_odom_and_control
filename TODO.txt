@@ -1,0 +1,16 @@
+Things that need to be done for this package:
+
+http://wiki.ros.org/navigation/Tutorials/RobotSetup/Odom
+
+implement ugv velocity controller:
+    Subscribes to topic "cmd_vel" to obtain target velocities.
+    Applies INVERSE kinematics to convert robot velocity into velocities
+        for each motor.
+    Interfaces with Jaguar motor controllers to set target velocity for each motor.
+
+implement ugv odometry publisher:
+    Publishes robot velocity to odom topic.
+    Interfaces with motor controllers to obtain actual velocity of each motor.
+    Applies FORWARD kinematics to convert motor velocities into velocity of robot.
+
+    
